@@ -7,13 +7,26 @@
     %link{href: '/css/bootstrap.css', rel: 'stylesheet', type: 'text/css'}
     %link{href: '/css/style.css', rel: 'stylesheet', type: 'text/css'}
 
-  %body
-    .row-fluid.game-off{style: "display: block; margin-top: 100px"}
-      %a(href="/flash/all") Flash All
-      %a(href="/green") Green
-      %a(href="/red") Red
-      %a(href="/yellow") Yellow
-
-
-
-
+%body
+  .container
+    .span2
+      %a.btn.btn-danger.btn-large.btn-block(href="/red") Go Red
+      %p
+        %a.btn.btn-danger(href="/red/on") Red On
+        %a.btn.btn-danger(href="/red/off") Red Off
+    .span2
+      %a.btn.btn-primary.btn-large.btn-block(href="/blue") Go Blue
+      %p
+        %a.btn.btn-primary(href="/blue/on") Blue On
+        %a.btn.btn-primary(href="/blue/off") Blue Off
+    .span2
+      %a.btn.btn-success.btn-large.btn-block(href="/green") Go Green
+      %p
+        %a.btn.btn-success(href="/green/on") Green On
+        %a.btn.btn-success(href="/green/off") Green Off
+    .span6
+      %a.btn.btn-large.btn-block(href="/white") White On
+      %a.btn.btn-large.btn-inverse.btn-block(href="/white/off") White Off
+      %a.btn.btn-block(href="/flash/all") Police Car
+      %a.btn.btn-block(href="/strobe") Strobe Light
+      %a.btn.btn-inverse.btn-block(href="/reset") Turn Off
