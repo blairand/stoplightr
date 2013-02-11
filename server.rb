@@ -106,10 +106,11 @@ def reset
 end
 
 def strobe
-  50.times do
+  10.times do
     all_on
-    sleep 0.3
+    sleep 0.1
     all_off
+    sleep 0.1
   end
 end
 
